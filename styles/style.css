@@ -5,12 +5,10 @@ body {
 }
 
 #memory-board {
-  background: #dddddd;
   width: 540px;
   padding: 70px;
   margin: 0px auto;
   border-radius: 84px;
-  box-shadow: inset 0px 0px 20px -6px rgba(97, 89, 97, 1);
 }
 
 .card {
