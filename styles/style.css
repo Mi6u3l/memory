@@ -23,9 +23,11 @@ body {
 }
 
 .card.turned .front {
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
 }
 .card.turned .back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -37,6 +39,7 @@ body {
   padding: 20px;
   font-size: 64px;
 
+  -webkit-transition: transform 0.6s;
   transition: transform 0.6s;
 }
 
@@ -48,6 +51,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-transform: rotateY(-180deg) translateZ(1px);
+  -webkit-transform: rotateY(-180deg) translateZ(1px);
+  -webkit-backface-visibility: hidden;
   transform: rotateY(-180deg) translateZ(1px);
   backface-visibility: hidden;
 }
